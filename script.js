@@ -22,11 +22,11 @@ const handleSubmit = event => {
     }
 };
 
-const newIngredients = event => {
+const newIngredients = e => {
     //grab the lists
-    const listOfFood = event.target.closest('.ingredient');
+    const listOfFood = e.target.closest('.ingredient');
     const title = listOfFood.querySelector('h1').textContent;
-    const ingredients = event.target;
+    const ingredients = e.target;
 	const { one, two, three } = ingredients.dataset;
 	// put it on the modal
     const myRecipes = `

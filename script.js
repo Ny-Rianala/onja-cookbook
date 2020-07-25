@@ -1,4 +1,4 @@
-// Grab element we need
+// Grab element
 const submitBtn = document.querySelector('button.submit-button');
 const recipeForm = document.querySelector("form");
 const orderedRecipe = document.querySelector(".recipe-list");
@@ -19,7 +19,6 @@ const handleSubmit = event => {
         `;
         orderedRecipe.innerHTML += myHTML;
         form.reset();
-      console.log(myHTML);
     }
 };
 

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onja cookbook</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Onja Cookbook</h1>
+    <form>
+      <div class="recipe-order"></div>
+        <p>What's the recipe name</p>
+        <input type="text" class="form-recipe-name" id="recipe-name" name="recipe" placeholder="Enter your recipe name" />
+        <p>Picture of th result(URL)</p>
+        <input type="url" class="form-image" id="recipe-photo" name="recipeImg" placeholder="https://picsum.photos/200" />
+        <p>Who's the cook?</p>
+        <input type="text" class="form" id="cook-s-name" name="name" placeholder="Enter cook's name" />
+        <p>What's the difficulty?</p>
+        <select name="level" class="select-form" required>
+          <option value="hard">Hard</option>
+          <option value="medium">Medium</option>
+          <option value="easy">Easy</option>
+        </select>
+        <p>How much time does it take?</p>
+        <select name="time" class="select-form" required>
+          <option value="hour">1 hour</option>
+          <option value="minute">30 minutes</option>
+          <option value="less">Less than 30 minutes</option>
+        </select>
+      </form>
+      <div>
+        <p>Ingredients</p>
+        <input type="text" class="ingredient-list" placeholder="Add an new ingredient to the list"
+          data-one="Eggs"
+          data-two="salts"
+          data-three="water"
+        >
+        <p>Steps</p>
+        <input type="text" class="step" placeholder="Add a new step to the list"
+          data-step1="put the pan on the fire"
+          data-step2="crack the egg on it"
+          data-step3="wait put the out"
+        >
+      </div>
+        <button class="submit-button" onclick="add_element_array();">submit</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
